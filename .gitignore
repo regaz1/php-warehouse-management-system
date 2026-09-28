@@ -1,0 +1,9 @@
+/data/*.sqlite
+/data/*.sqlite-*
+/runtime/
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+
+!/data/.gitkeep

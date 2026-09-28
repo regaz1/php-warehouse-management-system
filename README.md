@@ -22,15 +22,14 @@ A responsive warehouse management application with a Greek user interface, built
 
 ## Run Locally
 
-### Windows with XAMPP
+### Windows — one-click start
 
-1. Install XAMPP.
-2. Download and extract the project.
-3. Double-click `START-PHP.bat`.
-4. Keep the command window open while using the application.
-5. The application will open at `http://127.0.0.1:8000`.
+1. Download and extract the project.
+2. Double-click `START-PHP.bat`.
+3. Keep the command window open while using the application.
+4. The application will open at `http://127.0.0.1:8000`.
 
-The launcher automatically finds PHP when it is available in your PATH or at `C:\xampp\php\php.exe`.
+The launcher uses PHP from XAMPP or your PATH when available. If PHP is not installed, it downloads the official portable PHP runtime on the first run and stores it inside the ignored `runtime` directory. An internet connection is required only for this initial setup.
 
 ### Using a terminal
 
@@ -62,6 +61,7 @@ public/
 data/                  local database, created automatically
 tests/run.php          functional tests
 START-PHP.bat          Windows launcher
+setup-php.ps1          automatic portable PHP setup
 ```
 
 See the [database diagram](docs/database-schema.md) for the main entities and relationships.
