@@ -42,7 +42,7 @@ function create_order(PDO $db, int $customerId, array $productIds, array $quanti
         $lines[$productId] = ($lines[$productId] ?? 0) + $quantity;
     }
 
-    $db->exec('BEGIN IMMEDIATE TRANSACTION');
+    $db->beginTransaction();
     try {
         $details = [];
         $total = 0.0;
@@ -117,3 +117,4 @@ function seed_demo(PDO $db): void
         throw $exception;
     }
 }
+
